@@ -31,6 +31,17 @@
   </head>
 
   <body>
+  
+  
+<audio controls autoplay loop id="Mytune">
+  <source src="http://honourcreators.com/event/song/tune.mp3" type="audio/ogg">
+  <embed src="http://honourcreators.com/event/song/tune.mp3" autostart="true" loop="true" hidden="true"> 
+</audio>
+<script type="text/javascript"> 
+document.getElementById("Mytune").style.display = "none"; 
+</script> 
+
+
     <nav class="container">
       <span><img src = "images/logo1.png" height = "50px" width="90px"></span>
       <ul>
@@ -389,17 +400,7 @@ Developed during your stay at home during this pandemic, Register Soon...
     ></script>
 	
 	
-  <audio id="mytune">
- <source src="song/tune.ogg" type="audio/ogg">
-  <source src="song/tune.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<script type="text/javascript"> 
-document.getElementById("mytune").style.display = "none"; 
-sound.currentTime = 0;
-sound.loop = true; //if you want it to restart playing automatically when it ends
-sound.play();
-</script> 
+
 
 </body>
 </html>
