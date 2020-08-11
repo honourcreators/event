@@ -361,11 +361,14 @@ Developed during your stay at home during this pandemic, Register Soon...
       </div>
     </section>
     <footer>
+
       <p>
         Digitalization with <i class="fas fa-heart"></i> Team
         <a href="https://honourcreators.com/">HonourCreators</a>
       </p>
     </footer>
+	
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -384,5 +387,19 @@ Developed during your stay at home during this pandemic, Register Soon...
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-  </body>
+	
+	
+  <audio id="mytune">
+ <source src="song/tune.ogg" type="audio/ogg">
+  <source src="song/tune.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script type="text/javascript"> 
+document.getElementById("mytune").style.display = "none"; 
+sound.currentTime = 0;
+sound.loop = true; //if you want it to restart playing automatically when it ends
+sound.play();
+</script> 
+
+</body>
 </html>
